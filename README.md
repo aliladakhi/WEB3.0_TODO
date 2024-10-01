@@ -11,10 +11,6 @@ This smart contract implements a decentralized task management system on the Eth
 - **Comments**: Add comments to tasks for better communication
 - **Two-Tier System**: Basic and Premium user roles with different capabilities
 
-## Contract Details
-- **Solidity Version**: 0.8.0
-- **License**: MIT
-
 ## Data Structures
 
 ### User
