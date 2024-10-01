@@ -16,13 +16,4 @@ Decentralized Task Management is a web application that allows users to create, 
 
 - **Frontend**: React, Web3.js
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB (for user data)
 - **Blockchain**: Ethereum (using smart contracts)
-
-## Installation
-
-To run the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/decentralized-task-management.git
