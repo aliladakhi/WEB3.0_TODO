@@ -86,62 +86,10 @@ function assignTask(uint256 taskId, address assignee) public
 
 ### Prerequisites
 - Ethereum wallet (e.g., MetaMask)
-- Ethereum development environment (e.g., Hardhat, Truffle)
-- Solidity compiler version 0.8.0 or higher
+- - Solidity compiler version 0.8.0 or higher
 
 ### Deployment
 1. Deploy the contract to your chosen Ethereum network
 2. The deploying address becomes the contract owner
 
-### Interacting with the Contract
-1. **Registration**:
-   ```javascript
-   await contract.register("username", "password", {value: ethers.utils.parseEther("0.01")});
-   ```
 
-2. **Creating a Task**:
-   ```javascript
-   await contract.createTask(
-     "Task Title",
-     "Task Description",
-     deadline, // Unix timestamp
-     1, // Priority: 0=Low, 1=Medium, 2=High, 3=Urgent
-     ["tag1", "tag2"]
-   );
-   ```
-
-3. **Assigning a Task**:
-   ```javascript
-   await contract.assignTask(taskId, assigneeAddress);
-   ```
-
-## Security Considerations
-- All user passwords are hashed using keccak256
-- Registration fee prevents spam accounts
-- Task limit per user prevents DOS attacks
-- Only task creators can modify their tasks
-- Contract owner can only modify registration fee and withdraw funds
-
-## Gas Optimization
-- Efficient data structures to minimize gas costs
-- Task limit prevents excessive storage usage
-- Careful use of storage vs memory variables
-
-## Testing
-Recommended test cases:
-1. User registration with correct/incorrect fees
-2. Task creation and validation
-3. Collaboration and task assignment
-4. Access control for various functions
-
-## Frontend Integration
-The contract emits events for all major actions, allowing frontends to:
-- Track task creation and updates in real-time
-- Monitor user registrations and collaborations
-- Update UI based on task status changes
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
